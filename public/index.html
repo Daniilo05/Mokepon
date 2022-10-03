@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Makepon</title>
+</head>
+<body>
+    
+    <section id="Seleccionar-personaje">
+        <h1 class="titulo">  Makepon  </h1>
+
+        <h2 class="subtitulo">Elige tu personaje</h2>
+
+        <div id="contenedorTarjetas" class="lista"></div></div>
+        
+        <button id="boton-personaje">seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulo"> recorre el mapa con tu personaje  </h2>
+        <canvas id="mapa"></canvas>
+        <button
+            ontouchend = 'detenerMovimiento()'
+            onmouseup = 'detenerMovimiento()'
+            ontouchstart = 'moverArriba()'
+            onmousedown="moverArriba()">Arriba
+        </button>
+                
+        <div>
+        <button
+            ontouchend = 'detenerMovimiento()'                   
+            onmouseup = 'detenerMovimiento()' 
+            ontouchstart ='moverIzquierda()'
+            onmousedown ="moverIzquierda()">izquierda
+        </button>
+        <button 
+            ontouchend = 'detenerMovimiento()'           
+            onmouseup = 'detenerMovimiento()' 
+            ontouchstart = 'moverAbajo()'
+            onmousedown= "moverAbajo()">Abajo
+        </button>
+        <button 
+            ontouchend = 'detenerMovimiento()'
+            onmouseup = 'detenerMovimiento()' 
+            ontouchstart = 'moverDerecha()'
+            onmousedown= "moverDerecha()">Derecha
+        </button>
+        </div>
+    </section>
+
+
+
+    <section id="Seleccionar-ataque">
+        <h1 class="titulo">Makepon</h1>
+
+        <h2 class="subtitulo">Elige tu ataque</h2>
+
+        <div id='contenedorAtaques' class="lista-ataque"> </div>
+
+      
+        <div id="mensaje"> 
+            <div id="resultado"></div>
+          
+        </div>
+                      
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Jugar de Nuevo</button>
+        </section>
+      
+        <div class="ataque">
+            <div class="ataque-jugador">
+                <P id="vidas-jugador">0</p>
+                <p id="personaje-jugador"></p>
+                <div id="ataque-del-jugador"></div>
+            </div>
+            
+            <div class="ataque-enemigo">
+                <P id="vidas-enemigo">0</p>
+                <p id="personaje-enemigo"></p>
+                <div id="ataque-del-enemigo"></div>
+            </div>
+        
+        </div>
+        
+       
+    </section>
+    
+    <script src="codigo.js"></script>
+</body>
+</html>

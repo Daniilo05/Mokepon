@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Silkscreen&display=swap');
+
+
+
+body{
+    background-image: url(./assets/animated-gifs-of-fighting-game-backgrounds-101.webp);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Silkscreen', cursive;
+}
+
+.titulo{
+    font-size: 100px;
+    color: rgb(255, 140, 0);
+    width: 530px;
+    height: 50px;
+    text-align-last: center;
+
+}
+.subtitulo{
+    color:#499e8d;
+    font-size: 70px;
+    
+}
+#Seleccionar-personaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.lista, .lista-ataque{
+    display: flex;
+    gap: 10px;
+}
+
+.lista-personaje{
+    font-size: 30px;
+    text-align: center;
+    color: #553939;
+    width: 250px;
+    height: 270px;
+    background-color: rgb(244, 240, 240, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border-color: rgb(244, 240, 240, 0.25);
+    border-style: solid;
+    border-radius: 10px;
+}
+.lista-personaje img{
+    width: 200px;
+    padding: 10px;
+}
+#boton-personaje{
+    color: #fff;
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 140, 0);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-color: rgb(255, 140, 0);
+    border-radius: 10px;
+
+}
+
+input{
+    display: none;
+}
+
+label:hover{
+    background-color: rgba(18, 231, 21, 0.25);
+   
+}
+
+#Seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+
+.bonton-de-ataque{
+    color: #472D2D;
+    font-size: 30px;
+    width: 190px;
+    height: 70px;
+    font-family: 'Silkscreen', cursive;
+    background-color: rgb(255, 140, 0, 0.7);
+    border-color: rgb(255, 140, 0, 0.25);
+    padding:5px;
+    border-radius: 10px;
+}
+
+#mensaje{
+    font-size: 30px;
+    width: 500px;
+    height: 50px;
+    background: rgb(244, 240, 240, 0.5);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-color: rgb(244, 240, 240, 0.25);
+    border-style: solid;
+}
+
+#boton-reiniciar{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Silkscreen', cursive;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 140, 0);
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-color: rgb(255, 140, 0);
+    border-radius: 10px;
+}
+
+.ataque{
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    color:#472D2D;
+    background-color: rgb(244, 240, 240, 0.25);
+    padding: 10px;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.ataque-jugador, .ataque-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    color: #fff;
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 140, 0);
+    box-sizing: border-box;
+    border-color: rgb(255, 140, 0);
+    border-radius: 10px;
+    margin: 10px 0;
+
+
+}
+
+@media (max-width:850px){
+    .lista{
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width:600px){
+    .lista-ataque{
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 400px) { 
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (min-width = 390px) {
+    .subtitulo{
+       font-size: 50px;
+    }
+    
+}
+    
